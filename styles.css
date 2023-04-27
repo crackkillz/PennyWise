@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+
+
+
+.sidebar {
+    position: fixed;
+    list-style: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 196px;
+    border-radius: 10px;
+    background: linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #00ff4c);
+    background-size: 200% 200%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    padding: 24px;
+}
+
+
+li ul a span nav-link {
+    background: none;
+    list-style: none;
+}
+
+.sidebar .logo img {
+    width: 130px;
+}
+.sidebar .nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.sidebar .nav ul li {
+    padding: 10px 0px;
+    list-style: none;
+}
+.sidebar .nav ul li a {
+    color: #000000;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sidebar .nav ul li a:hover .fa,
+.sidebar .nav ul li a.active .fa,
+.sidebar .nav ul li a:focus .fa {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.sidebar .nav ul li a:hover .fa:hover,
+.sidebar .nav ul li a.active .fa:active,
+.sidebar .nav ul li a:focus .fa:focus {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sidebar .policies {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar .policies ul {
+    list-style: none;
+}
+.sidebar .policies ul li {
+    padding-bottom: 5px;
+}
+.sidebar .policies ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10px;
+}
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:focus,
+.sidebar .policies ul li a:active {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10px;
+}
+.siodbar .policies ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sidebar .policies ul li a:hover .fa:hover,
+.sidebar .policies ul li a:focus .fa:focus,
+.sidebar .policies ul li a:active .fa:active {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10px;
+}
+.sidebar .policies {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    padding-left: 220px;   
+    background: linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #00ff4c);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    padding: 24px;
+}
+
+.main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+}
+
+.topbar {
+    display: flex;
+    border: #000000;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #00ff4c);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    -o-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+    padding: 14px 30px;
+}
+.topbar .prev-next-buttons button {
+    color: #ffffff;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin-right: 15px;
+}
+.topbar .navbar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 0px 10px;
+    align-items: center;
+}
+.topbar .navbar ul {
+    list-style: none;
+}
+.topbar .navbar ul li {
+    display: inline-block;
+    border: #000000;
+    border-radius: 10px;
+    margin: 0px 8px;
+    width: 70px;
+}
+.topbar .navbar ul li a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    padding: px 10px;
+    margin: 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:focus,
+.topbar .navbar ul li a:active {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.topbar .navbar ul li a:hover .fa:hover,
+.topbar .navbar ul li a:focus .fa:focus,
+.topbar .navbar ul li a:active .fa:active {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.topbar .navbar ul li.divider {
+    color: #ffffff;  
+    font-size: 26px;  
+    margin: 0px 20px;
+    width: auto;
+    }
+
+    .topbar .navbar button {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 14px 30px;
+        border: 0px;
+        border-radius: 40px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    .topbar .navbar button:hover,
+    .topbar .navbar button:focus,
+    .topbar .navbar button:active {
+        background-color: #00aeff;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 14px 30px;
+        border: 0px;
+        border-radius: 40px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    .spotify-playlists {
+        padding: 20px 40px;
+      }
+      .spotify-playlists h2 {
+        color: #ffffff;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .spotify-playlists .list {
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+      }
+      .spotify-playlists .list .item {
+        min-width: 140px;
+        width: 160px;
+        padding: 15px;
+        background: linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #000000, #00ff4c);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all ease 0.4s;
+      }
+      .spotify-playlists .list .item:hover {
+        background-color: #252525;
+      }
+      .spotify-playlists .list .item img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+      .spotify-playlists .list .item .play {
+        position: relative;
+      }
+      .spotify-playlists .list .item .play .fa {
+        position: absolute;
+        right: 10px;
+        top: -60px;
+        padding: 18px;
+        background-color: #9d00ff;
+        border-radius: 100%;
+        opacity: 0;
+        transition: all ease 0.4s;
+      }
+      .spotify-playlists .list .item:hover .play .fa {
+        opacity: 1;
+        transform: translateY(-20px);
+      }
+      .spotify-playlists .list .item h4 {
+        color: #ffffff;
+        font-size: 14px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .spotify-playlists .list .item p {
+        color: #989898;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 600;
+      }
+      .spotify-playlists hr {
+        margin: 70px 0px 0px;
+        border-color: #636363;
+      }
+      
+    .preview {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background:linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #00ff4c);
+        background-size: 800% 800%;
+        -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    -o-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+        justify-content: space-between;
+    }
+    .preview h6 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    }
+    .preview p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    }
+    .preview button {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 14px 30px;
+        border: 0px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
