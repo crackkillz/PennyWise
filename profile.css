@@ -1,6 +1,3 @@
-* {
-  scroll-behavior: smooth;
-}
 
 @charset "UTF-8";
 body {
@@ -8,10 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body a {
-  color: #aaaaaa;
+  color: #000000;
 }
 body a:hover {
-  color: #c8c8c8;
+  color: #ffffff;
 }
 .content {
   display: flex;
@@ -21,7 +18,7 @@ body a:hover {
   width: 15%;
 }
 .content__middle {
-  width: 70%;
+  width: 85%;
 }
 .content__right {
   width: 15%;
@@ -76,13 +73,13 @@ body a:hover {
   border-bottom: 1px solid #181818;
 }
 .playlist:hover {
-  background: #424242;
+  background: #8e04ff;
 }
 .playlist:hover a {
-  color: white;
+  color: rgb(0, 221, 255);
 }
 .playlist a {
-  color: #aaaaaa;
+  color: #ffffff;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -118,22 +115,22 @@ body a:hover {
   height: 50px;
 }
 .playing__song {
-  color: #aaaaaa;
+  color: #ffffff;
   padding-left: 15px;
   display: flex;
   flex-flow: column wrap;
 }
 .playing__song a {
-  color: #aaaaaa;
+  color: #ffffff;
 }
 .playing__song a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 .playing__add {
   margin-left: auto;
   padding-right: 15px;
-  color: #aaaaaa;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -148,11 +145,15 @@ body a:hover {
     -moz-animation: AnimationName 10s ease infinite;
     -o-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
-  padding: 5px 15px;
+  padding: 5px 5px;
   display: flex;
+  margin-right: 10px;
+  position: absolute;
   flex-flow: row wrap;
   align-items: center;
+  width: 85%;
 }
+
 .current-track__actions {
   width: 5%;
   display: flex;
@@ -162,10 +163,10 @@ body a:hover {
 }
 .current-track__actions a {
   font-size: 24px;
-  color: #c8c8c8;
+  color: #000000;
 }
 .current-track__actions a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .current-track__actions .play {
@@ -174,7 +175,7 @@ body a:hover {
 .current-track__progress {
   width: 70%;
   padding: 0 30px;
-  color: #aaaaaa;
+  color: #000000;
   font-size: 11px;
   display: flex;
   flex-flow: row;
@@ -197,10 +198,10 @@ body a:hover {
     -o-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;}
 .current-track__progress__bar .noUi-origin {
-  background: #5e5e5e;
+  background: #000000;
 }
 .current-track__progress__bar .noUi-handle {
-  background: #c8c8c8;
+  background: #ffffff;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -340,6 +341,7 @@ body a:hover {
 }
 .artist__header {
   height: 320px;
+  width: 100%;
   border-bottom: 1px solid #282828;
   position: relative;
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/spotify_img_bground.png);
@@ -525,7 +527,7 @@ body a:hover {
 }
 .artist__content .overview__artist {
   padding-right: 15px;
-  width: 70%;
+  width: 85%;
 }
 .artist__content .overview__artist .latest-release {
   margin-bottom: 30px;
@@ -652,18 +654,18 @@ body a:hover {
 }
 .tracks .track__number {
   margin-left: 10px;
-  color: #aaaaaa;
+  color: #000000;
   width: 12px;
 }
 .tracks .track__added {
   margin-left: 30px;
-  color: #c8c8c8;
+  color: #000000;
 }
 .tracks .track__added .added {
-  color: #c8c8c8;
+  color: #000000;
 }
 .tracks .track__added .not-added {
-  color: #aaaaaa;
+  color: #000000;
 }
 .tracks .track__title {
   width: 45%;
@@ -675,7 +677,7 @@ body a:hover {
   margin: 0 5px;
 }
 .tracks .track__title.featured .feature {
-  color: #aaaaaa;
+  color: #000000;
 }
 .tracks .track__title.featured .feature:after {
   content: ",";
@@ -687,30 +689,30 @@ body a:hover {
 }
 .tracks .track__title.featured .feature:hover {
   cursor: pointer;
-  color: #c8c8c8;
+  color: #000000;
   text-decoration: underline;
 }
 .tracks .track__explicit .label {
   border: 1px;
   border-style: solid;
-  border-color: #424242;
-  color: #424242;
+  border-color: #000000;
+  color: #000000;
   text-transform: uppercase;
 }
 .tracks .track__plays {
-  color: #aaaaaa;
+  color: #000000;
   margin-left: auto;
   padding-right: 10px;
 }
 .tracks .track__length {
   margin-left: auto;
-  color: #aaaaaa;
+  color: #ffffff;
 }
 .tracks .track__popularity {
   margin-left: 46px;
   padding-right: 10px;
   font-size: 20px;
-  color: #aaaaaa;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -875,6 +877,7 @@ body a:hover {
   }
 }
 .social {
+  position: relative;
   padding: 15px;
   text-align: center;
   overflow-y: scroll;
@@ -956,11 +959,13 @@ body a:hover {
   }
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 20px;
+  background-color: #cfcfcf;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
+  color: #ffffff;
   background: #373737;
 }
 

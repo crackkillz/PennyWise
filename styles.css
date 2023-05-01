@@ -13,6 +13,150 @@ body {
     padding: 0;
     
 }
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+
+
+.music-player {
+    --primary-color: #ddd;
+    --secondary-color: #999;
+    --green-color: #2d5;
+    --padding: 1em;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 7rem;
+    padding: var(--padding);
+    color: var(--primary-color);
+}
+.song-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1px;
+    right: 0;
+    bottom: 0;
+    width: auto;
+}
+
+.song-infos {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.image-container {
+    --size: 4.5em;
+    flex-shrink: 0;
+    width: var(--size);
+    height: var(--size);
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.song-description p {
+    margin: 0.2em;
+}
+.title,
+.artist {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: auto;
+}
+.title:hover,
+.artist:hover {
+    text-decoration: underline;
+}
+.artist{
+    color: var(--secondary-color);
+}
+.icons{
+    display: flex;
+    gap: 1em;
+}
+.progress-controller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    color: var(--secondary-color);
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.play-pause{
+    display: inline-block;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: #111;
+    border-radius: 50%;
+}
+.play-pause:hover{
+    transform: scale(1.1);
+    color: #111;
+}
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.progress-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #ccc4;
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.progress-bar:hover .progress{
+    background-color: var(--green-color);
+}
+.progress-bar:hover .progress::after{
+    content: "";
+    position: absolute;
+    --size: 1em;
+    width: var(--size);
+    height: var(--size);
+    right: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: translate(50%, calc(2px - 50%));
+}
+.other-features{
+    position: absolute;
+    right: var(--padding);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.volume-bar .progress-bar{
+    width: 6em;
+}
+.volume-bar .progress-bar:hover .progress::after{
+    --size: .8em;
+}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 43%}
@@ -273,7 +417,7 @@ main {
       .playlists .list {
         display: flex;
         gap: 20px;
-        overflow: hidden;
+        overflow: auto;
       }
       .playlists .list .item {
         min-width: 140px;
@@ -319,7 +463,7 @@ main {
         font-size: 14px;
         margin-bottom: 10px;
         white-space: nowrap;
-        overflow: hidden;
+        overflow: auto;
         text-overflow: ellipsis;
       }
       .playlists .list .item p {
@@ -332,40 +476,5 @@ main {
         margin: 70px 0px 0px;
         border-color: #636363;
       }
-      
-    .preview {
-        position: fixed;
-        display: flex;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background:linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #00ff4c);
-        background-size: 800% 800%;
-        -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    -o-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
-        justify-content: space-between;
-    }
-    .preview h6 {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 10px;
-
-    }
-    .preview p {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 500;
-    }
-    .preview button {
-        background-color: #ffffff;
-        color: #000000;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 14px 30px;
-        border: 0px;
-        border-radius: 40px;
-        cursor: pointer;
-    }
+     
+   
