@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 body {
   background: #181818;
@@ -105,7 +104,7 @@ body a:hover {
     -moz-animation: AnimationName 10s ease infinite;
     -o-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid #00d9ff;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -124,7 +123,7 @@ body a:hover {
   color: #ffffff;
 }
 .playing__song a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .playing__add {
@@ -135,35 +134,41 @@ body a:hover {
 
 @media (max-width: 768px) {
   .playing {
-    border-top: 1px solid #181818;
+    border-top: 1px solid #ffffff;
   }
 }
 .current-track {
     background: linear-gradient(326deg, #00ffbd, #7300ff, #d800ff, #00f5ff, #00ff4c);
     background-size: 800% 800%;
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    -o-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
-  padding: 5px 5px;
-  display: flex;
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 66s ease infinite;
+    -o-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
+  padding: 5px 0;
+  display: inline-block;
   margin-right: 10px;
+  margin-left: 220PX;
+  margin-bottom: 10px;
+  bottom: 40px;
   position: absolute;
   flex-flow: row wrap;
+  box-shadow: #000000, 0px 0px 10px 0px;
+  border-radius: 1px;
   align-items: center;
-  width: 85%;
+  width: 100%;
 }
 
 .current-track__actions {
   width: 5%;
   display: flex;
+  position: relative;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
 .current-track__actions a {
   font-size: 24px;
-  color: #000000;
+  color: #ffffff;
 }
 .current-track__actions a:hover {
   color: rgb(255, 255, 255);
@@ -175,7 +180,7 @@ body a:hover {
 .current-track__progress {
   width: 70%;
   padding: 0 30px;
-  color: #000000;
+  color: #ffffff;
   font-size: 11px;
   display: flex;
   flex-flow: row;
@@ -198,7 +203,7 @@ body a:hover {
     -o-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;}
 .current-track__progress__bar .noUi-origin {
-  background: #000000;
+  background: #ffffff;
 }
 .current-track__progress__bar .noUi-handle {
   background: #ffffff;
@@ -207,7 +212,7 @@ body a:hover {
   border-radius: 50%;
   box-shadow: none;
   border: none;
-  left: 0;
+  left: 10px;
   display: none;
 }
 .current-track__progress__bar .noUi-handle:before, .current-track__progress__bar .noUi-handle:after {
@@ -225,12 +230,15 @@ body a:hover {
 .current-track__options .lyrics {
   font-size: 11px;
   text-transform: uppercase;
-  width: 15%;
+  margin-left: 10px;
+  width: 25%;
+  align-items: center;
   padding: 0 15px 0 0;
 }
 .current-track__options .controls {
   width: 85%;
   display: flex;
+  align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
 }
@@ -281,9 +289,9 @@ body a:hover {
 .current-track__options .controls .volume #song-volume:hover .noUi-handle {
   display: block;
 }
-@media (max-width: 1400px) {
+@media (max-width: 100%) {
   .current-track__actions {
-    width: 10%;
+    width: 20%;
   }
   .current-track__progress {
     width: 50%;
@@ -292,7 +300,7 @@ body a:hover {
     width: 40%;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 100%) {
   .current-track__actions {
     width: 10%;
   }
@@ -303,7 +311,7 @@ body a:hover {
     width: 50%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .current-track__actions {
     width: 25%;
   }
@@ -314,29 +322,29 @@ body a:hover {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 100%) {
   .current-track__actions {
     width: 100%;
-    justify-content: space-around;
-    padding: 5px 0;
+    justify-content: space-between;
+    padding: 5px 5px;
   }
   .current-track__progress {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px ;
   }
   .current-track__options {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px 5px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .current-track__action {
     padding-top: 15px;
   }
 }
 .artist {
-  height: 617px;
+  height: 700px;
   overflow-y: scroll;
 }
 .artist__header {
@@ -1061,4 +1069,17 @@ button:hover {
   letter-spacing: 1.25px;
   font-size: 13.2px;
   margin-bottom: 10px;
+}
+
+.embed-code {
+  background: none;
+  display: flex;
+  position: relative
+  ALIGN-ITEMS: CENTER;
+  justify-content: center;
+  width: aUTO;
+  height: auto;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }

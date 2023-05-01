@@ -223,7 +223,6 @@ html {
   .page-content-container {
     background-color: #510406;
     display: grid;
-    width: 85%;
     grid-template-columns: 325px 453px 380px;
     grid-column-gap: 20px;
     grid-template-areas: "sidebar main";
